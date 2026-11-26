@@ -1,0 +1,30 @@
+.app { max-width: 960px; margin: 0 auto; padding: 24px 16px 48px; }
+header { text-align: center; margin-bottom: 24px; }
+header h1 { font-size: 40px; margin: 0; color: #7a4a1f; }
+header p { color: #6b5a49; margin: 6px 0 0; }
+
+.filters { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px; }
+.filters button { padding: 8px 16px; border: 1px solid #c9a876; background: #fff; border-radius: 999px; cursor: pointer; font-size: 14px; }
+.filters button.active { background: #b4551f; color: #fff; border-color: #b4551f; }
+
+main { display: grid; grid-template-columns: 1fr 300px; gap: 24px; align-items: start; }
+@media (max-width: 720px) { main { grid-template-columns: 1fr; } }
+
+.menu-grid { display: grid; gap: 16px; }
+.menu-card { background: #fff; border: 1px solid #eadfc9; border-radius: 12px; padding: 16px; }
+.menu-card h3 { margin: 0 0 6px; font-size: 19px; }
+.menu-desc { margin: 0 0 12px; color: #6b5a49; font-size: 14px; }
+.menu-row { display: flex; justify-content: space-between; align-items: center; }
+.menu-price { font-weight: bold; font-size: 18px; }
+.menu-row button, .clear-btn { background: #b4551f; color: #fff; border: none; border-radius: 8px; padding: 8px 14px; cursor: pointer; font-size: 14px; }
+
+.cart { background: #fff; border: 1px solid #eadfc9; border-radius: 12px; padding: 16px; position: sticky; top: 16px; }
+.cart h2 { margin: 0 0 12px; font-size: 20px; }
+.cart ul { list-style: none; margin: 0 0 12px; padding: 0; }
+.cart li { display: flex; gap: 8px; align-items: center; padding: 8px 0; border-bottom: 1px solid #f0e8d8; font-size: 14px; }
+.cart li span:first-child { flex: 1; }
+.cart li button { background: none; border: 1px solid #c9a876; border-radius: 6px; padding: 4px 8px; cursor: pointer; font-size: 12px; }
+.cart-total { font-weight: bold; font-size: 17px; }
+.clear-btn { width: 100%; }
+
+footer { text-align: center; color: #8a7a68; font-size: 13px; margin-top: 32px; }
